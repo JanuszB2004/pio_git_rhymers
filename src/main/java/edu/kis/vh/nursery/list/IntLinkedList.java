@@ -4,6 +4,7 @@ public class IntLinkedList {
 
     Node last;
     int i;
+    public static final int EMPTY_INDICATOR = -1;
 
     public void push(int i) {
         if (last == null)
@@ -25,13 +26,13 @@ public class IntLinkedList {
 
     public int top() {
         if (isEmpty())
-            return -1;
+            return EMPTY_INDICATOR;
         return last.value;
     }
 
     public int pop() {
         if (isEmpty())
-            return -1;
+            return EMPTY_INDICATOR;
         int ret = last.value;
         last = last.prev;
         return ret;
