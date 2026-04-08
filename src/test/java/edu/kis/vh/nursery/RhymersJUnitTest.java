@@ -2,7 +2,7 @@ package edu.kis.vh.nursery;
 
 import org.junit.Assert;
 import org.junit.Test;
-
+// Testy dzialaja poprawnie po robiciu metody main
 public class RhymersJUnitTest {
 
     @Test
