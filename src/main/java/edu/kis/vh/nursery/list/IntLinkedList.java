@@ -6,15 +6,6 @@ public class IntLinkedList {
     private int i;
     private static final int EMPTY_INDICATOR = -1;
 
-    public void push(int i) {
-        if (last == null)
-            last = new Node(i);
-        else {
-            last.setNext(new Node(i));
-            last.getNext().setPrev(last);
-            last = last.getNext();
-        }
-    }
 
     public boolean isEmpty() {
         return last == null;
