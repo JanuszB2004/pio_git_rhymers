@@ -2,7 +2,7 @@ package edu.kis.vh.nursery;
 
 import org.junit.Assert;
 import org.junit.Test;
-
+// Testy działaja poprawnie po rozbiciu metody main
 public class RhymersJUnitTest {
 
     @Test
@@ -26,7 +26,7 @@ public class RhymersJUnitTest {
         result = rhymer.callCheck();
         Assert.assertEquals(false, result);
     }
-
+    // TODO: możliwość zastosowania metody assertFalse dla poprawy czytelności kodu
     @Test
     public void testIsFull() {
         DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
@@ -40,6 +40,7 @@ public class RhymersJUnitTest {
         boolean result = rhymer.isFull();
         Assert.assertEquals(true, result);
     }
+    // TODO: możliwość zastosowania metody assertFalse i assertTrue dla poprawy czytelności kodu
 
     @Test
     public void testPeekaboo() {
