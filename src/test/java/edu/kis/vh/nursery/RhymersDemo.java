@@ -29,6 +29,7 @@ class RhymersDemo {
                 System.out.print(rhymers[i].countOut() + "  ");
             System.out.println();
         }
+        // TODO: Zastosowanie pętli foreach w przypadku tej pętli poprawi jej czytelność
 
         System.out.println("total rejected is "
                 + ((HanoiRhymer) rhymers[3]).reportRejected());

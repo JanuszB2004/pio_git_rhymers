@@ -18,6 +18,7 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
         
         return ret;
     }
+    // TODO: niepotrzebne puste linie w metodzie oraz słaba czytelność pętli while
 
     public DefaultCountingOutRhymer getTemp() {
         return temp;
