@@ -7,6 +7,16 @@ public class IntLinkedList {
     private static final int EMPTY_INDICATOR = -1;
 
 
+    public void push(int i) {
+        if (last == null)
+            last = new Node(i);
+        else {
+            last.next = new Node(i);
+            last.getNext().prev = last;
+            last = last.getNext();
+        }
+    }
+
     public boolean isEmpty() {
         return last == null;
     }
@@ -33,8 +43,8 @@ public class IntLinkedList {
 class Node {
 
     private final int value;
-    private Node prev;
-    private Node next;
+    Node prev;
+    Node next;
 
     public Node(int i) {
         value = i;
